@@ -2,389 +2,388 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Happy Birthday</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+  <meta charset="UTF-8" />
+  <title>Happy Birthday</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Great Vibes', cursive;
-            background: linear-gradient(to right, #ffb6c1, #ffe4e1);
-            overflow-x: hidden;
-            text-align: center;
-            position: relative;
-        }
+    body {
+      font-family: 'Great Vibes', cursive;
+      background: linear-gradient(to right, #ffb6c1, #ffe4e1);
+      overflow-x: hidden;
+      text-align: center;
+      position: relative;
+    }
 
-        section {
-            padding: 100px 20px;
-            min-height: 100vh;
-            position: relative;
-        }
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+      position: relative;
+    }
 
-        .typewriter {
-            overflow: hidden;
-            border-right: .15em solid #fff;
-            white-space: nowrap;
-            margin: 0 auto 20px;
-            letter-spacing: .12em;
-            width: 22ch;
-            animation: typing 4s steps(25, end), blink-caret .75s step-end infinite;
-            font-size: 2.5em;
-            color: #fff;
-            text-shadow: 2px 2px 5px #ff1493;
-        }
+    .typewriter {
+      overflow: hidden;
+      border-right: .15em solid #fff;
+      white-space: nowrap;
+      margin: 0 auto 20px;
+      letter-spacing: .12em;
+      width: 22ch;
+      animation: typing 4s steps(25, end), blink-caret .75s step-end infinite;
+      font-size: 2.5em;
+      color: #fff;
+      text-shadow: 2px 2px 5px #ff1493;
+    }
 
-        @keyframes typing {
-            from {
-                width: 0
-            }
+    @keyframes typing {
+      from {
+        width: 0
+      }
 
-            to {
-                width: 22ch
-            }
-        }
+      to {
+        width: 22ch
+      }
+    }
 
-        @keyframes blink-caret {
-            from, to {
-                border-color: transparent
-            }
+    @keyframes blink-caret {
+      from,
+      to {
+        border-color: transparent
+      }
 
-            50% {
-                border-color: white;
-            }
-        }
+      50% {
+        border-color: white;
+      }
+    }
 
-        p {
-            font-size: 1.5em;
-            color: white;
-            text-shadow: 1px 1px 3px #ff69b4;
-            margin: 20px;
-        }
+    p {
+      font-size: 1.5em;
+      color: white;
+      text-shadow: 1px 1px 3px #ff69b4;
+      margin: 20px;
+    }
 
-        .btn {
-            background: #ff69b4;
-            border: none;
-            color: white;
-            padding: 15px 30px;
-            margin: 20px;
-            font-size: 1.2em;
-            border-radius: 30px;
-            cursor: pointer;
-            box-shadow: 0 0 15px #ff1493, 0 0 30px #ff69b4;
-            transition: transform 0.3s ease;
-        }
+    .btn {
+      background: #ff69b4;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      margin: 20px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #ff1493, 0 0 30px #ff69b4;
+      transition: transform 0.3s ease;
+    }
 
-        .btn:hover {
-            transform: scale(1.1);
-        }
+    .btn:hover {
+      transform: scale(1.1);
+    }
 
-        .gift {
-            width: 200px;
-            cursor: pointer;
-            transition: transform 0.4s ease;
-        }
+    .gift {
+      width: 200px;
+      cursor: pointer;
+      transition: transform 0.4s ease;
+    }
 
-        .gift:hover {
-            transform: scale(1.15);
-        }
+    .gift:hover {
+      transform: scale(1.15);
+    }
 
-        .heart {
-            position: fixed;
-            top: 100vh;
-            font-size: 20px;
-            animation: float 10s linear infinite;
-        }
+    .heart {
+      position: fixed;
+      top: 100vh;
+      font-size: 20px;
+      animation: float 10s linear infinite;
+    }
 
-        @keyframes float {
-            0% {
-                transform: translateY(0);
-                opacity: 1;
-            }
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
 
-            100% {
-                transform: translateY(-120vh);
-                opacity: 0;
-            }
-        }
+      100% {
+        transform: translateY(-120vh);
+        opacity: 0;
+      }
+    }
 
-        .sparkle {
-            position: fixed;
-            width: 2px;
-            height: 2px;
-            background: white;
-            box-shadow: 0 0 10px white;
-            animation: sparkleMove 3s linear infinite;
-        }
+    .sparkle {
+      position: fixed;
+      width: 2px;
+      height: 2px;
+      background: white;
+      box-shadow: 0 0 10px white;
+      animation: sparkleMove 3s linear infinite;
+    }
 
-        @keyframes sparkleMove {
-            from {
-                transform: translateY(0);
-                opacity: 1;
-            }
+    @keyframes sparkleMove {
+      from {
+        transform: translateY(0);
+        opacity: 1;
+      }
 
-            to {
-                transform: translateY(-100vh);
-                opacity: 0;
-            }
-        }
+      to {
+        transform: translateY(-100vh);
+        opacity: 0;
+      }
+    }
 
-        #fireworks {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
+    #fireworks {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
 
-        .hidden {
-            display: none;
-        }
+    .hidden {
+      display: none;
+    }
 
-        .fade-in {
-            animation: fadeIn 1.5s ease-in-out forwards;
-        }
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out forwards;
+    }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.9);
-            }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
 
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
 
-        .emojis {
-            font-size: 2em;
-            margin-top: 40px;
-            color: white;
-            text-shadow: 2px 2px 4px #ff69b4;
-            animation: pulse 2s infinite;
-        }
+    .emojis {
+      font-size: 2em;
+      margin-top: 40px;
+      color: white;
+      text-shadow: 2px 2px 4px #ff69b4;
+      animation: pulse 2s infinite;
+    }
 
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
 
-            50% {
-                transform: scale(1.1);
-            }
+      50% {
+        transform: scale(1.1);
+      }
 
-            100% {
-                transform: scale(1);
-            }
-        }
+      100% {
+        transform: scale(1);
+      }
+    }
 
-        audio {
-            display: none;
-        }
+    audio {
+      display: none;
+    }
 
-        #photoSlideshow {
-            margin-top: 40px;
-        }
+    #photoSlideshow {
+      margin-top: 40px;
+    }
 
-        #slideshowImage {
-            width: 90%;
-            max-width: 300px;
-            border: 5px solid #ff69b4;
-            border-radius: 20px;
-            box-shadow: 0 0 20px #ff69b4;
-            transition: opacity 0.5s ease-in-out;
-            cursor: pointer;
-        }
-    </style>
+    #slideshowImage {
+      width: 90%;
+      max-width: 300px;
+      border: 5px solid #ff69b4;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #ff69b4;
+      transition: opacity 0.5s ease-in-out;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
 
-    <audio id="bgMusic" loop>
-        <source src="data/bensound-love.mp3" type="audio/mpeg">
-    </audio>
+  <audio id="bgMusic" loop>
+    <source src="data/bensound-love.mp3" type="audio/mpeg">
+  </audio>
 
-    <canvas id="fireworks"></canvas>
+  <canvas id="fireworks"></canvas>
 
-    <script>
-        setInterval(() => {
-            const heart = document.createElement('div');
-            heart.className = 'heart';
-            heart.textContent = '💖';
-            heart.style.left = Math.random() * 100 + 'vw';
-            heart.style.fontSize = Math.random() * 15 + 15 + 'px';
-            document.body.appendChild(heart);
-            setTimeout(() => heart.remove(), 10000);
-        }, 300);
-        setInterval(() => {
-            const sparkle = document.createElement('div');
-            sparkle.className = 'sparkle';
-            sparkle.style.left = Math.random() * 100 + 'vw';
-            sparkle.style.top = Math.random() * 100 + 'vh';
-            document.body.appendChild(sparkle);
-            setTimeout(() => sparkle.remove(), 3000);
-        }, 150);
-    </script>
+  <script>
+    setInterval(() => {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.textContent = '💖';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = Math.random() * 15 + 15 + 'px';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 10000);
+    }, 300);
 
-    <section>
-        <div class="typewriter">Happy Birthday 🎉</div>
-        <p>You make the world brighter just by being in it.</p>
-        <img src="data/image1.png" class="gift" id="giftBox" onclick="openGift()" />
-        <div id="message1" class="hidden fade-in">
-            <h2>You opened the gift! 🎁</h2>
-            <p>Inside is my heart, full of love and the best wishes for you.</p>
-            <button class="btn" onclick="showSecond()">Next Surprise 💫</button>
-        </div>
-        <div id="message2" class="hidden fade-in">
-            <h2>Here's More! 🎈</h2>
-            <p>Wishing you smiles, sparkles, and sweet memories today and always.</p>
-            <button class="btn" onclick="showThird()">Final Message 💌</button>
-        </div>
-        <div id="message3" class="hidden fade-in">
-            <h2>Final Surprise ✨</h2>
-            <p>You’re not just special, you're magical. I hope your birthday is as beautiful as you are 💖</p>
-        </div>
+    setInterval(() => {
+      const sparkle = document.createElement('div');
+      sparkle.className = 'sparkle';
+      sparkle.style.left = Math.random() * 100 + 'vw';
+      sparkle.style.top = Math.random() * 100 + 'vh';
+      document.body.appendChild(sparkle);
+      setTimeout(() => sparkle.remove(), 3000);
+    }, 150);
+  </script>
 
-        <div class="emojis">
-            💑💕💖🌹😍💌🌟❤🫶💍💞🎁
-        </div>
+  <section>
+    <div class="typewriter">Happy Birthday 🎉</div>
+    <p>You make the world brighter just by being in it.</p>
+    <img src="data/image1.png" class="gift" id="giftBox" onclick="openGift()" />
+    <div id="message1" class="hidden fade-in">
+      <h2>You opened the gift! 🎁</h2>
+      <p>Inside is my heart, full of love and the best wishes for you.</p>
+      <button class="btn" onclick="showSecond()">Next Surprise 💫</button>
+    </div>
+    <div id="message2" class="hidden fade-in">
+      <h2>Here's More! 🎈</h2>
+      <p>Wishing you smiles, sparkles, and sweet memories today and always.</p>
+      <button class="btn" onclick="showThird()">Final Message 💌</button>
+    </div>
+    <div id="message3" class="hidden fade-in">
+      <h2>Final Surprise ✨</h2>
+      <p>You’re not just special, you're magical. I hope your birthday is as beautiful as you are 💖</p>
+    </div>
 
-        <div id="photoSlideshow">
-            <img id="slideshowImage" src="data/IMG_20250622_133300.jpg" alt="Birthday Photo" />
-        </div>
-    </section>
+    <div class="emojis">
+      💑💕💖🌹😍💌🌟❤🫶💍💞🎁
+    </div>
 
-    <script>
-        const bgMusic = document.getElementById("bgMusic");
+    <div id="photoSlideshow">
+      <img id="slideshowImage" src="data/IMG_20250622_133300.jpg" alt="Birthday Photo" />
+    </div>
+  </section>
 
-        function openGift() {
-            document.getElementById('giftBox').style.display = 'none';
-            const msg1 = document.getElementById('message1');
-            msg1.classList.remove('hidden');
-            msg1.classList.add('fade-in');
-            slideshowimage();
+  <script>
+    const bgMusic = document.getElementById("bgMusic");
 
-            // Play background music after interaction
-            bgMusic.play().catch(err => {
-                console.log("Playback failed:", err);
-            });
-        }
+    function openGift() {
+      document.getElementById('giftBox').style.display = 'none';
+      const msg1 = document.getElementById('message1');
+      msg1.classList.remove('hidden');
+      msg1.classList.add('fade-in');
+      slideshowimage();
+      bgMusic.play().catch(err => {
+        console.log("Playback failed:", err);
+      });
+    }
 
-        function showSecond() {
-            document.getElementById('message1').style.display = 'none';
-            const msg2 = document.getElementById('message2');
-            msg2.classList.remove('hidden');
-            msg2.classList.add('fade-in');
-            slideshowimage();
-        }
+    function showSecond() {
+      document.getElementById('message1').style.display = 'none';
+      const msg2 = document.getElementById('message2');
+      msg2.classList.remove('hidden');
+      msg2.classList.add('fade-in');
+      slideshowimage();
+    }
 
-        function showThird() {
-            document.getElementById('message2').style.display = 'none';
-            const msg3 = document.getElementById('message3');
-            msg3.classList.remove('hidden');
-            msg3.classList.add('fade-in');
-            slideshowimage();
-        }
+    function showThird() {
+      document.getElementById('message2').style.display = 'none';
+      const msg3 = document.getElementById('message3');
+      msg3.classList.remove('hidden');
+      msg3.classList.add('fade-in');
+      slideshowimage();
+    }
 
-        const slideshowImages = [
-            "/data/IMG_20250622_133300.jpg",
-            "/data/IMG_20250622_133324.jpg",
-            "/data/IMG_20250622_133337.jpg",
-            "/data/Screenshot_2025-06-22-13-30-54-287_com.miui.gallery-edit.jpg",
-            "/data/Screenshot_2025-06-22-13-31-50-373_com.miui.gallery-edit.jpg"
-        ];
-        let currentSlide = 0;
-        const slideshowImg = document.getElementById("slideshowImage");
+    const slideshowImages = [
+      "data/IMG_20250622_133300.jpg",
+      "data/IMG_20250622_133324.jpg",
+      "data/IMG_20250622_133337.jpg",
+      "data/Screenshot_2025-06-22-13-30-54-287_com.miui.gallery-edit.jpg",
+      "data/Screenshot_2025-06-22-13-31-50-373_com.miui.gallery-edit.jpg"
+    ];
+    let currentSlide = 0;
+    const slideshowImg = document.getElementById("slideshowImage");
 
-        function slideshowimage() {
-            currentSlide = (currentSlide + 1) % slideshowImages.length;
-            slideshowImg.style.opacity = 0;
-            setTimeout(() => {
-                slideshowImg.src = slideshowImages[currentSlide];
-                slideshowImg.style.opacity = 1;
-            }, 20);
-        }
+    function slideshowimage() {
+      currentSlide = (currentSlide + 1) % slideshowImages.length;
+      slideshowImg.style.opacity = 0;
+      setTimeout(() => {
+        slideshowImg.src = slideshowImages[currentSlide];
+        slideshowImg.style.opacity = 1;
+      }, 20);
+    }
 
-        // Fireworks
-        const canvas = document.getElementById('fireworks');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+    const canvas = document.getElementById('fireworks');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-        function Particle(x, y, speed, angle, color) {
-            this.x = x;
-            this.y = y;
-            this.speed = speed;
-            this.angle = angle;
-            this.color = color;
-            this.life = 1;
-            this.radius = Math.random() * 3 + 2;
-            this.acceleration = Math.random() * 0.02 + 0.02;
-        }
+    function Particle(x, y, speed, angle, color) {
+      this.x = x;
+      this.y = y;
+      this.speed = speed;
+      this.angle = angle;
+      this.color = color;
+      this.life = 1;
+      this.radius = Math.random() * 3 + 2;
+      this.acceleration = Math.random() * 0.02 + 0.02;
+    }
 
-        Particle.prototype.update = function () {
-            this.speed += this.acceleration;
-            this.x += Math.cos(this.angle) * this.speed;
-            this.y += Math.sin(this.angle) * this.speed;
-            this.life -= 0.015;
-            this.radius *= 0.98;
-        };
+    Particle.prototype.update = function () {
+      this.speed += this.acceleration;
+      this.x += Math.cos(this.angle) * this.speed;
+      this.y += Math.sin(this.angle) * this.speed;
+      this.life -= 0.015;
+      this.radius *= 0.98;
+    };
 
-        Particle.prototype.draw = function () {
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-            ctx.fillStyle = this.color;
-            ctx.fill();
-        };
+    Particle.prototype.draw = function () {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+      ctx.fillStyle = this.color;
+      ctx.fill();
+    };
 
-        function Firework(x, y, colors) {
-            this.x = x;
-            this.y = y;
-            this.particles = [];
-            this.colors = colors;
-            for (let i = 0; i < 150; i++) {
-                const angle = Math.random() * 2 * Math.PI;
-                const speed = Math.random() * 3 + 1;
-                const color = this.colors[Math.floor(Math.random() * this.colors.length)];
-                this.particles.push(new Particle(this.x, this.y, speed, angle, color));
-            }
-        }
+    function Firework(x, y, colors) {
+      this.x = x;
+      this.y = y;
+      this.particles = [];
+      this.colors = colors;
+      for (let i = 0; i < 150; i++) {
+        const angle = Math.random() * 2 * Math.PI;
+        const speed = Math.random() * 3 + 1;
+        const color = this.colors[Math.floor(Math.random() * this.colors.length)];
+        this.particles.push(new Particle(this.x, this.y, speed, angle, color));
+      }
+    }
 
-        Firework.prototype.update = function () {
-            this.particles.forEach(p => p.update());
-            this.particles = this.particles.filter(p => p.life > 0);
-        };
+    Firework.prototype.update = function () {
+      this.particles.forEach(p => p.update());
+      this.particles = this.particles.filter(p => p.life > 0);
+    };
 
-        Firework.prototype.draw = function () {
-            this.particles.forEach(p => p.draw());
-        };
+    Firework.prototype.draw = function () {
+      this.particles.forEach(p => p.draw());
+    };
 
-        const fireworks = [];
-        setInterval(() => {
-            const firework = new Firework(
-                Math.random() * canvas.width,
-                Math.random() * canvas.height / 2,
-                ['#ff4500', '#ff6347', '#ff1493', '#ffd700', '#ff69b4']
-            );
-            fireworks.push(firework);
-        }, 4000);
+    const fireworks = [];
+    setInterval(() => {
+      const firework = new Firework(
+        Math.random() * canvas.width,
+        Math.random() * canvas.height / 2,
+        ['#ff4500', '#ff6347', '#ff1493', '#ffd700', '#ff69b4']
+      );
+      fireworks.push(firework);
+    }, 4000);
 
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            fireworks.forEach(f => {
-                f.update();
-                f.draw();
-            });
-            requestAnimationFrame(animate);
-        }
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      fireworks.forEach(f => {
+        f.update();
+        f.draw();
+      });
+      requestAnimationFrame(animate);
+    }
 
-        animate();
-    </script>
+    animate();
+  </script>
 </body>
 
 </html>
